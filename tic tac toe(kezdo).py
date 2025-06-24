@@ -9,18 +9,16 @@ def boardmaker():
 table = boardmaker()
 
 def boardprint(table):
-    for row in range(table):
-        line = ""
-        for col in range(table):
-            line += "   "
-            if col < table - 1:
-                line += "|"
-        print(line)
-        if row < table - 1:
-            print("-" * (table * 4 - 1))
-    
+    for i in range(table):
+        print("--------"*table)
+        print("|      |"*table)
+    print("--------"*table)
 boardprint(table)
-    
+
+def gamestart(table):
+    print("1. player is up next and he will be with the X")
+    X1=int(input("Which row do you want to put your X (only 1 number)"))
+    Y1=int(input("Which collumn do you want to put your X(only 1 number)"))
     
     
 
